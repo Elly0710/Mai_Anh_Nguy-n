@@ -4,7 +4,7 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 
 const config = {
-  birthdate: 'Oct 06, 2022',
+  birthdate: 'Oct 07, 2022',
   name: 'Mai Anh'
 };
 
@@ -26,7 +26,7 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-let countDown = new Date(`${config.birthdate} 08:41:00`).getTime();
+let countDown = new Date(`${config.birthdate} 00:00:00`).getTime();
 x = setInterval(function() {
   let now = new Date().getTime(),
     distance = countDown - now;
@@ -484,7 +484,7 @@ x = setInterval(function() {
       setTimeout(openBox, stepMinutes[step - 1]);
       step++;
       setTimeout(()=>{
-        window.location.href = 'index2.html'
+        window.location.href = 'cong_chua_ngoc.html'
       },3000)
       //   setTimeout(anim, 1900);
     }
